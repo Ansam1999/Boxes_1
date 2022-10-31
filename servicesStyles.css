@@ -1,0 +1,129 @@
+.services{
+    display: flex;
+    flex-direction:  row-reverse;
+    flex-wrap: wrap;
+  width: 100%;
+   
+    justify-content: space-between;
+}
+.page_title{
+    position: absolute;
+   margin-right: calc((150*100vw)/1440);
+   margin-left: calc((150*100vw)/1440);
+   
+   font-size: 40px;
+   font-weight: 700;
+ }
+.description {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .content_title{
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 2px solid black;
+}
+.readMore_btn{
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    font-size: 18px;
+    margin-top: 40px;
+}
+.service_card{
+    
+    height:calc((300*100vw)/1440);
+     position: relative;
+   width: 30%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ justify-content: center;
+ background-color: rgb(18, 83, 148);
+color: white;
+box-shadow: 5px 10px 8px 10px #888888;
+}
+.service_title{
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.arrow_icon{
+    margin-left: 15px;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.note{
+    direction: rtl;
+    text-align: right;
+    width: fit-content;
+}
+
+.readMore_btn:hover{
+    padding: 20px 50px;
+    cursor: pointer;
+ 
+}
+.service_section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 40px;
+}
+
+@media only screen and (max-width:750px) {
+    .services{
+    flex-wrap: nowrap;
+     overflow-x: auto;
+    }
+    .page_title{
+        font-size: 20px;
+    }
+    .card{
+       min-width: 65%;
+          margin-right: 30px;
+          height: 200px;
+    }
+    .description{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .content_title{
+        font-size: 16px;
+    }
+    .service_title{
+        font-size: 16px;
+    }
+  
+    .note{
+        direction: rtl;
+        text-align: right;
+    }
+    .service_section{
+        align-items: flex-end;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .services{
+    flex-wrap: nowrap;
+     overflow-x: auto;
+    width: 100%;
+    }
+    .card{
+        min-width: 60%;
+    }
+}
